@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'meditation_screens/meditation_screen.dart';
 import 'stress_reduction_screen.dart';
 import 'mental_health_resources_screen.dart';
-import '../widgets/date_helper.dart'; // import the date helper extension
+import '../widgets/date_helper.dart'; //Import the date helper extension
 
+//Adds list of information that will be changed daily
 class HomeScreen extends StatelessWidget
 {
   final List<String> dailyAffirmations = [
@@ -40,7 +41,7 @@ class HomeScreen extends StatelessWidget
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
-                const SizedBox(height: 20), // Add some top padding
+                const SizedBox(height: 20), //Top padding
                 buildTitleSection('Be Bold'),
                 const SizedBox(height: 10.0),
                 buildSubtitleSection(getDailyContent(dailyAffirmations)),
@@ -128,7 +129,7 @@ class HomeScreen extends StatelessWidget
           const SizedBox(height: 5.0),
           Text(
             description,
-            style: TextStyle(fontSize: 14), // Smaller font size
+            style: TextStyle(fontSize: 14), //Font size
           ),
           const SizedBox(height: 10.0),
           ElevatedButton(
@@ -140,7 +141,7 @@ class HomeScreen extends StatelessWidget
               );
             },
             style: ElevatedButton.styleFrom(
-              minimumSize: Size(200, 40), // Smaller button
+              minimumSize: Size(200, 40), //Button
               padding: EdgeInsets.symmetric(horizontal: 16.0),
             ),
             child: Text('Go to $title'),

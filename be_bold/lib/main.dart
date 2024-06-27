@@ -57,9 +57,9 @@ class _MainPageState extends State<MainPage>
       bottomNavigationBar: BottomNavigationBar(
         onTap: onTabTapped,
         currentIndex: _currentIndex,
-        backgroundColor: Colors.blueGrey[50], // Change the background color
-        selectedItemColor: Colors.blue, // Change the selected item color
-        unselectedItemColor: Colors.grey, // Change the unselected item color
+        backgroundColor: Colors.blueGrey[50], //Change background color
+        selectedItemColor: Colors.blue, //Change selected item color
+        unselectedItemColor: Colors.grey, //Change unselected item color
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
