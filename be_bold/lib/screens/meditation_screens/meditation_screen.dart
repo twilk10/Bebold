@@ -1,29 +1,11 @@
-import 'package:be_bold/screens/meditation_screens/meditationOne.dart';
 import 'package:flutter/material.dart';
-// import 'meditationTwo.dart';
-// import 'meditationThree.dart';
-// import 'meditationFour.dart';
+import 'meditationOne.dart';
 
-void main() {
-  runApp(MeditationApp());
-}
-
-class MeditationApp extends StatelessWidget {
+class MeditationScreen extends StatelessWidget
+{
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Meditation Exercises',
-      theme: ThemeData(
-        primarySwatch: Colors.purple,
-      ),
-      home: MeditationPage(),
-    );
-  }
-}
-
-class MeditationPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context)
+  {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Meditation Exercises'),
@@ -53,66 +35,49 @@ class MeditationPage extends StatelessWidget {
               ),
               const SizedBox(height: 24.0),
               ExerciseButton(
-                  exerciseNumber: 1,
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => MeditationOne()),
-                    );
-                  }),
+                exerciseNumber: 1,
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MeditationOne()),
+                  );
+                },
+              ),
               const SizedBox(height: 16.0),
+              // Uncomment and implement the following if you have more exercises
               // ExerciseButton(
-              //     exerciseNumber: 2,
-              //     onPressed: () {
-              //       Navigator.push(
-              //         context,
-              //         MaterialPageRoute(builder: (context) => MeditationTwo()),
-              //       );
-              //     }),
+              //   exerciseNumber: 2,
+              //   onPressed: () {
+              //     Navigator.push(
+              //       context,
+              //       MaterialPageRoute(builder: (context) => MeditationTwo()),
+              //     );
+              //   },
+              // ),
               // const SizedBox(height: 16.0),
               // ExerciseButton(
-              //     exerciseNumber: 3,
-              //     onPressed: () {
-              //       Navigator.push(
-              //         context,
-              //         MaterialPageRoute(
-              //             builder: (context) => MeditationThree()),
-              //       );
-              //     }),
+              //   exerciseNumber: 3,
+              //   onPressed: () {
+              //     Navigator.push(
+              //       context,
+              //       MaterialPageRoute(builder: (context) => MeditationThree()),
+              //     );
+              //   },
+              // ),
               // const SizedBox(height: 16.0),
               // ExerciseButton(
-              //     exerciseNumber: 4,
-              //     onPressed: () {
-              //       Navigator.push(
-              //         context,
-              //         MaterialPageRoute(builder: (context) => MeditationFour()),
-              //       );
-              //     }),
+              //   exerciseNumber: 4,
+              //   onPressed: () {
+              //     Navigator.push(
+              //       context,
+              //       MaterialPageRoute(builder: (context) => MeditationFour()),
+              //     );
+              //   },
+              // ),
             ],
           ),
         ),
       ),
-      // bottomNavigationBar: BottomNavigationBar(
-      //   items: const <BottomNavigationBarItem>[
-      //     BottomNavigationBarItem(
-      //       icon: Icon(Icons.home),
-      //       label: 'Home page',
-      //     ),
-      //     BottomNavigationBarItem(
-      //       icon: Icon(Icons.self_improvement),
-      //       label: 'Meditation page',
-      //     ),
-      //     BottomNavigationBarItem(
-      //       icon: Icon(Icons.stress_outlined),
-      //       label: 'Stress reduction page',
-      //     ),
-      //     BottomNavigationBarItem(
-      //       icon: Icon(Icons.health_and_safety),
-      //       label: 'Mental Health resource page',
-      //     ),
-      //   ],
-      //   selectedItemColor: Colors.purple,
-      // ),
     );
   }
 }
@@ -121,9 +86,11 @@ class ExerciseButton extends StatelessWidget {
   final int exerciseNumber;
   final VoidCallback onPressed;
 
-  const ExerciseButton(
-      {Key? key, required this.exerciseNumber, required this.onPressed})
-      : super(key: key);
+  const ExerciseButton({
+    Key? key,
+    required this.exerciseNumber,
+    required this.onPressed,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
