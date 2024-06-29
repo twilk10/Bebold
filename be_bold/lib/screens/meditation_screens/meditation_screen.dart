@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'meditationOne.dart';
+import 'meditationTwo.dart';
+import 'meditationThree.dart';
+import 'meditationFour.dart';
 
-class MeditationScreen extends StatelessWidget
-{
+class MeditationScreen extends StatelessWidget {
   @override
-  Widget build(BuildContext context)
-  {
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Meditation Exercises'),
@@ -44,36 +45,35 @@ class MeditationScreen extends StatelessWidget
                 },
               ),
               const SizedBox(height: 16.0),
-              // Uncomment and implement the following if you have more exercises
-              // ExerciseButton(
-              //   exerciseNumber: 2,
-              //   onPressed: () {
-              //     Navigator.push(
-              //       context,
-              //       MaterialPageRoute(builder: (context) => MeditationTwo()),
-              //     );
-              //   },
-              // ),
-              // const SizedBox(height: 16.0),
-              // ExerciseButton(
-              //   exerciseNumber: 3,
-              //   onPressed: () {
-              //     Navigator.push(
-              //       context,
-              //       MaterialPageRoute(builder: (context) => MeditationThree()),
-              //     );
-              //   },
-              // ),
-              // const SizedBox(height: 16.0),
-              // ExerciseButton(
-              //   exerciseNumber: 4,
-              //   onPressed: () {
-              //     Navigator.push(
-              //       context,
-              //       MaterialPageRoute(builder: (context) => MeditationFour()),
-              //     );
-              //   },
-              // ),
+              ExerciseButton(
+                exerciseNumber: 2,
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MeditationTwo()),
+                  );
+                },
+              ),
+              const SizedBox(height: 16.0),
+              ExerciseButton(
+                exerciseNumber: 3,
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MeditationThree()),
+                  );
+                },
+              ),
+              const SizedBox(height: 16.0),
+              ExerciseButton(
+                exerciseNumber: 4,
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MeditationFour()),
+                  );
+                },
+              ),
             ],
           ),
         ),

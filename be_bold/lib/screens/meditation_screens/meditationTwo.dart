@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class MeditationOne extends StatelessWidget {
+class MeditationTwo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Meditation Exercise 1'),
+        title: const Text('Meditation Exercise 2'),
         backgroundColor: Colors.purple,
       ),
       body: SingleChildScrollView(
@@ -14,12 +14,12 @@ class MeditationOne extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              'Welcome to Mindfulness Meditation',
+              'Welcome to Love and Kindness Meditation',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 16.0),
             const Text(
-              'Mindfulness meditation involves being fully present and engaged in the current moment, acknowledging and accepting your thoughts and feelings without judgment. Here\'s a simple guide to get you started:',
+              'Love and kindness meditation focuses on developing an additude of love and kindness towards yourself and others. Here\'s a simple guide to get you started:',
               style: TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 24.0),
@@ -34,32 +34,32 @@ class MeditationOne extends StatelessWidget {
             ),
             const SizedBox(height: 16.0),
             const Text(
-              '2. Focus on Your Breath',
+              '2. Relax',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8.0),
             const Text(
-              'Close your eyes and begin to focus on your breathing. Take notice of each breathe you take.',
+              'Close your eyes and clear your mind.',
               style: TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 16.0),
             const Text(
-              '3. Notice When Your Mind Wanders',
+              '3. Repeat your mantra',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8.0),
             const Text(
-              'It’s natural for your mind to wander. When you notice it happening, gently bring your focus back to your breath.',
+              'Repeat phrases such as "May I be happy, may I be healthy" aloud to yourself.',
               style: TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 16.0),
             const Text(
-              '4. Be Kind to Yourself',
+              '4. Extend to others',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8.0),
             const Text(
-              'Don’t judge yourself for any thoughts that arise. Accept them without judgment and return to focusing on your breath.',
+              'Gradually extend the phrases of love and kindness to other people in your life.',
               style: TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 16.0),
@@ -69,7 +69,7 @@ class MeditationOne extends StatelessWidget {
             ),
             const SizedBox(height: 8.0),
             const Text(
-              'Reduces stress, imporves concentration, increases self-awareness, and enhances emotional health.',
+              'Increases positive emotions, enhances emotional intelligence, reduces self-criticism, and fosters a sense of interconnectedness.',
               style: TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 24.0),

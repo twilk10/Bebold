@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class MeditationOne extends StatelessWidget {
+class MeditationThree extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Meditation Exercise 1'),
+        title: const Text('Meditation Exercise 3'),
         backgroundColor: Colors.purple,
       ),
       body: SingleChildScrollView(
@@ -14,12 +14,12 @@ class MeditationOne extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              'Welcome to Mindfulness Meditation',
+              'Welcome to Transcendental Meditation',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 16.0),
             const Text(
-              'Mindfulness meditation involves being fully present and engaged in the current moment, acknowledging and accepting your thoughts and feelings without judgment. Here\'s a simple guide to get you started:',
+              'Transcendental meditation involves silently repeating a mantra to achieve a state of relaxed awareness. Here\'s a simple guide to get you started:',
               style: TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 24.0),
@@ -34,42 +34,42 @@ class MeditationOne extends StatelessWidget {
             ),
             const SizedBox(height: 16.0),
             const Text(
-              '2. Focus on Your Breath',
+              '2. Get comfortable',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8.0),
             const Text(
-              'Close your eyes and begin to focus on your breathing. Take notice of each breathe you take.',
+              'Sit comfrotably and close your eyes.',
               style: TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 16.0),
             const Text(
-              '3. Notice When Your Mind Wanders',
+              '3. Find your mantra',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8.0),
             const Text(
-              'It’s natural for your mind to wander. When you notice it happening, gently bring your focus back to your breath.',
+              'Silently repeat your chosen mantra.',
               style: TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 16.0),
             const Text(
-              '4. Be Kind to Yourself',
+              '4. Notice when your mind wonders',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8.0),
             const Text(
-              'Don’t judge yourself for any thoughts that arise. Accept them without judgment and return to focusing on your breath.',
+              'It’s natural for your mind to wander. When you notice it happening, gently bring your focus back to your mantra.',
               style: TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 16.0),
             const Text(
               'Benefits:',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8.0),
             const Text(
-              'Reduces stress, imporves concentration, increases self-awareness, and enhances emotional health.',
+              'Reduces stress and anxiety, imporves cardiovascular health, and enhances creativity and productivity.',
               style: TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 24.0),
