@@ -3,6 +3,9 @@ import 'meditationOne.dart';
 import 'meditationTwo.dart';
 import 'meditationThree.dart';
 import 'meditationFour.dart';
+import 'meditationFive.dart';
+import 'meditationSix.dart';
+import 'meditationSeven.dart';
 
 class MeditationScreen extends StatelessWidget {
   @override
@@ -34,7 +37,7 @@ class MeditationScreen extends StatelessWidget {
                 ),
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 24.0),
+              const SizedBox(height: 16.0),
               ExerciseButton(
                 exerciseNumber: 1,
                 onPressed: () {
@@ -44,7 +47,7 @@ class MeditationScreen extends StatelessWidget {
                   );
                 },
               ),
-              const SizedBox(height: 16.0),
+              const SizedBox(height: 14.0),
               ExerciseButton(
                 exerciseNumber: 2,
                 onPressed: () {
@@ -54,7 +57,7 @@ class MeditationScreen extends StatelessWidget {
                   );
                 },
               ),
-              const SizedBox(height: 16.0),
+              const SizedBox(height: 14.0),
               ExerciseButton(
                 exerciseNumber: 3,
                 onPressed: () {
@@ -64,13 +67,43 @@ class MeditationScreen extends StatelessWidget {
                   );
                 },
               ),
-              const SizedBox(height: 16.0),
+              const SizedBox(height: 14.0),
               ExerciseButton(
                 exerciseNumber: 4,
                 onPressed: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => MeditationFour()),
+                  );
+                },
+              ),
+              const SizedBox(height: 14.0),
+              ExerciseButton(
+                exerciseNumber: 5,
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MeditationFive()),
+                  );
+                },
+              ),
+              const SizedBox(height: 14.0),
+              ExerciseButton(
+                exerciseNumber: 6,
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MeditationSix()),
+                  );
+                },
+              ),
+              const SizedBox(height: 14.0),
+              ExerciseButton(
+                exerciseNumber: 7,
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MeditationSeven()),
                   );
                 },
               ),
