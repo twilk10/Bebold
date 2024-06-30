@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'screens/home_screen.dart';
 import 'screens/meditation_screens/meditation_screen.dart';
-import 'screens/stress_reduction_screen.dart';
+import 'screens/stress_screens/stress_reduction_screen.dart';
 import 'screens/mental_health_resources_screen.dart';
 
 void main()

@@ -5,7 +5,7 @@ class StressTwo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Meditation Exercise 1'),
+        title: const Text('Stress Reduction Exercise 2'),
         backgroundColor: Colors.purple,
       ),
       body: SingleChildScrollView(
@@ -14,54 +14,33 @@ class StressTwo extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              'Welcome to Mindfulness Meditation',
+              'Welcome to Stress Reduction Through Movement ',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 16.0),
             const Text(
-              'Mindfulness meditation involves being fully present and engaged in the current moment, acknowledging and accepting your thoughts and feelings without judgment. Here\'s a simple guide to get you started:',
+              'Stress Reduction are quick ways to reduce stress in your everyday life ',
               style: TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 24.0),
             const Text(
-              '1. Find a Quiet Place',
+              '1. Find a place that is peaceful with lots of area to move preferably outside around trees and grass maybe even water if it is available',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
-            const SizedBox(height: 8.0),
-            const Text(
-              'Sit comfortably in a quiet place where you won’t be disturbed.',
-              style: TextStyle(fontSize: 16),
-            ),
+
             const SizedBox(height: 16.0),
             const Text(
-              '2. Focus on Your Breath',
+              '2. Try to concentrate on each step you take and not a step further or previous steps',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
-            const SizedBox(height: 8.0),
-            const Text(
-              'Close your eyes and begin to focus on your breathing. Take notice of each breathe you take.',
-              style: TextStyle(fontSize: 16),
-            ),
+
             const SizedBox(height: 16.0),
             const Text(
-              '3. Notice When Your Mind Wanders',
+              '3. Notice things around you often in every day life we pass things by and don\'t take time to enjoy whats around us',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
-            const SizedBox(height: 8.0),
-            const Text(
-              'It’s natural for your mind to wander. When you notice it happening, gently bring your focus back to your breath.',
-              style: TextStyle(fontSize: 16),
-            ),
-            const SizedBox(height: 16.0),
-            const Text(
-              '4. Be Kind to Yourself',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 8.0),
-            const Text(
-              'Don’t judge yourself for any thoughts that arise. Accept them without judgment and return to focusing on your breath.',
-              style: TextStyle(fontSize: 16),
-            ),
+
+
             const SizedBox(height: 16.0),
             const Text(
               'Benefits:',
@@ -69,12 +48,12 @@ class StressTwo extends StatelessWidget {
             ),
             const SizedBox(height: 8.0),
             const Text(
-              'Reduces stress, imporves concentration, increases self-awareness, and enhances emotional health.',
+              'This has been known to Release endorphins, and improve your mood. If done outside added benefit of fresh air and sunlight which is also proven to improve mood',
               style: TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 24.0),
             const Text(
-              'Practice this for a few minutes each day, gradually increasing the duration as you become more comfortable with the process.',
+              'This can be done at anytime throughout the day but it is a good way to start off the day end the day and can be done with others',
               style: TextStyle(fontSize: 16, fontStyle: FontStyle.italic),
             ),
           ],

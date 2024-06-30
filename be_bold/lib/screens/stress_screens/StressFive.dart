@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class StressFour extends StatelessWidget {
+class StressFive extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Stress Reduction Exercise 4'),
+        title: const Text('Stress Reduction Exercise 5'),
         backgroundColor: Colors.purple,
       ),
       body: SingleChildScrollView(
@@ -14,7 +14,7 @@ class StressFour extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              'Welcome to Stress Reduction Through Laughter',
+              'Welcome to Stress Reduction Through Aroma Therapy',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 16.0),
@@ -24,17 +24,31 @@ class StressFour extends StatelessWidget {
             ),
             const SizedBox(height: 24.0),
             const Text(
-              '1. Find Something that makes you laugh rather it be social media, a book, a video, or a conversation with friends',
+              '1. Find a Place that you can have scents at and that allows vapor',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 8.0),
+            const Text(
+              'Disclaimer this method will involve the purchase of items such as essential oils ',
+              style: TextStyle(fontSize: 16),
+            ),
+            const SizedBox(height: 16.0),
+            const Text(
+              '2. Find an essential oil that you enjoy a suggestion is a smell that brings back good memories',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
 
             const SizedBox(height: 16.0),
             const Text(
-              '2. Relax and try to focus on the thing that brings you laughter',
+              '3. Put your essential oil into the diffuser and put on some soothing music',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
 
-
+            const SizedBox(height: 16.0),
+            const Text(
+              '4. Take deep breaths and take in the scent of the aromatherapy',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
 
             const SizedBox(height: 16.0),
             const Text(
@@ -43,12 +57,12 @@ class StressFour extends StatelessWidget {
             ),
             const SizedBox(height: 8.0),
             const Text(
-              'Laughter has been proven to release endorphins and reduce stress hormones',
+              'Helps user focus on breathing as they also try to take in the smells around them',
               style: TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 24.0),
             const Text(
-              'Do not be afraid to do this often throughout the day as it is helpful with keeping high spirits',
+              'This practice is best done at the users residence as aroma therapy may disrupt others if used in a public space',
               style: TextStyle(fontSize: 16, fontStyle: FontStyle.italic),
             ),
           ],

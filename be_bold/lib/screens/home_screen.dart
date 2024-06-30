@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'meditation_screens/meditation_screen.dart';
-import 'stress_reduction_screen.dart';
+import 'stress_screens/stress_reduction_screen.dart';
 import 'mental_health_resources_screen.dart';
 import '../widgets/date_helper.dart'; //Import the date helper extension
 

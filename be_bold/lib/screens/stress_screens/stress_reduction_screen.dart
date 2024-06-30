@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'stress_screens/StressOne.dart';
-import 'stress_screens/StressTwo.dart';
-import 'stress_screens/StressThree.dart';
-import 'stress_screens/StressFour.dart';
-
+import 'StressOne.dart';
+import 'StressTwo.dart';
+import 'StressThree.dart';
+import 'StressFour.dart';
+import 'StressFive.dart';
+import 'StressSix.dart';
+import 'StressSeven.dart';
 
 class StressReductionScreen extends StatelessWidget {
   @override
@@ -36,8 +38,8 @@ class StressReductionScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 24.0),
-              ExerciseButton(
-                exerciseNumber: 1,
+              StressButton(
+                stressNumber: 1,
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -46,8 +48,8 @@ class StressReductionScreen extends StatelessWidget {
                 },
               ),
               const SizedBox(height: 16.0),
-              ExerciseButton(
-                exerciseNumber: 2,
+              StressButton(
+                stressNumber: 2,
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -56,8 +58,8 @@ class StressReductionScreen extends StatelessWidget {
                 },
               ),
               const SizedBox(height: 16.0),
-              ExerciseButton(
-                exerciseNumber: 3,
+              StressButton(
+                stressNumber: 3,
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -66,12 +68,42 @@ class StressReductionScreen extends StatelessWidget {
                 },
               ),
               const SizedBox(height: 16.0),
-              ExerciseButton(
-                exerciseNumber: 4,
+              StressButton(
+                stressNumber: 4,
                 onPressed: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => StressFour()),
+                  );
+                },
+              ),
+              const SizedBox(height: 16.0),
+              StressButton(
+                stressNumber: 5,
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => StressFive()),
+                  );
+                },
+              ),
+              const SizedBox(height: 16.0),
+              StressButton(
+                stressNumber: 6,
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => StressSix()),
+                  );
+                },
+              ),
+              const SizedBox(height: 16.0),
+              StressButton(
+                stressNumber: 7,
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => StressSeven()),
                   );
                 },
               ),
@@ -83,13 +115,13 @@ class StressReductionScreen extends StatelessWidget {
   }
 }
 
-class ExerciseButton extends StatelessWidget {
-  final int exerciseNumber;
+class StressButton extends StatelessWidget {
+  final int stressNumber;
   final VoidCallback onPressed;
 
-  const ExerciseButton({
+  const StressButton({
     Key? key,
-    required this.exerciseNumber,
+    required this.stressNumber,
     required this.onPressed,
   }) : super(key: key);
 
@@ -101,7 +133,7 @@ class ExerciseButton extends StatelessWidget {
         minimumSize: const Size(double.infinity, 50), // Button width and height
       ),
       onPressed: onPressed,
-      child: Text('Exercise $exerciseNumber'),
+      child: Text('Exercise $stressNumber'),
     );
   }
 }

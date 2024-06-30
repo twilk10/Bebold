@@ -5,7 +5,7 @@ class StressOne extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Meditation Exercise 1'),
+        title: const Text('Stress Reduction Exercise 1'),
         backgroundColor: Colors.purple,
       ),
       body: SingleChildScrollView(
@@ -14,54 +14,42 @@ class StressOne extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              'Welcome to Mindfulness Meditation',
+              'Welcome to Stress Reduction through Muscle Relaxation',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 16.0),
             const Text(
-              'Mindfulness meditation involves being fully present and engaged in the current moment, acknowledging and accepting your thoughts and feelings without judgment. Here\'s a simple guide to get you started:',
+              'Stress Reduction are quick ways to reduce stress in your everyday life ',
               style: TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 24.0),
             const Text(
-              '1. Find a Quiet Place',
+              '1. Sit down or lie down in a position you find comfortable and preferebly a relatively stress free enviornment',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
+
+            const SizedBox(height: 16.0),
+            const Text(
+              '2. Start tensing and releasing a muscle group while focusing on your breathing',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8.0),
             const Text(
-              'Sit comfortably in a quiet place where you won’t be disturbed.',
+              'This exercise is more effective if you start at one end of your body rather that be bottom or top and work your way up or down for example if you were to start from the top the neck would be a good place to start and if you were to start from the bottom the toes would be a good place to start',
               style: TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 16.0),
             const Text(
-              '2. Focus on Your Breath',
+              '3. Try to reach as many muscle groups as possible for the best results',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
-            const SizedBox(height: 8.0),
-            const Text(
-              'Close your eyes and begin to focus on your breathing. Take notice of each breathe you take.',
-              style: TextStyle(fontSize: 16),
-            ),
+
             const SizedBox(height: 16.0),
             const Text(
-              '3. Notice When Your Mind Wanders',
+              '4. Try to stretch and and focus on what part of your body you are stretching',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
-            const SizedBox(height: 8.0),
-            const Text(
-              'It’s natural for your mind to wander. When you notice it happening, gently bring your focus back to your breath.',
-              style: TextStyle(fontSize: 16),
-            ),
-            const SizedBox(height: 16.0),
-            const Text(
-              '4. Be Kind to Yourself',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 8.0),
-            const Text(
-              'Don’t judge yourself for any thoughts that arise. Accept them without judgment and return to focusing on your breath.',
-              style: TextStyle(fontSize: 16),
-            ),
+
             const SizedBox(height: 16.0),
             const Text(
               'Benefits:',
@@ -69,14 +57,10 @@ class StressOne extends StatelessWidget {
             ),
             const SizedBox(height: 8.0),
             const Text(
-              'Reduces stress, imporves concentration, increases self-awareness, and enhances emotional health.',
+              'This exercise helps users with their anxious thoughts and can help to get better sleep if done before going to bed',
               style: TextStyle(fontSize: 16),
             ),
-            const SizedBox(height: 24.0),
-            const Text(
-              'Practice this for a few minutes each day, gradually increasing the duration as you become more comfortable with the process.',
-              style: TextStyle(fontSize: 16, fontStyle: FontStyle.italic),
-            ),
+
           ],
         ),
       ),
