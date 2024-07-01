@@ -2,27 +2,38 @@ import 'package:flutter/material.dart';
 import 'meditation_screens/meditation_screen.dart';
 import 'stress_screens/stress_reduction_screen.dart';
 import 'mental_health_resources_screen.dart';
-import '../widgets/date_helper.dart'; //Import the date helper extension
+import '../widgets/date_helper.dart'; // Import the date helper extension
 
-//Adds list of information that will be changed daily
-class HomeScreen extends StatelessWidget
-{
+// Adds list of information that will be changed daily
+class HomeScreen extends StatelessWidget {
   final List<String> dailyAffirmations = [
     "You are capable of amazing things.",
     "Believe in yourself and all that you are.",
-    "Positivity always wins."
+    "Positivity always wins.",
+    "You are enough just as you are.",
+    "Every day is a new opportunity.",
+    "You have the power to create change.",
+    "Your potential is limitless."
   ];
 
   final List<String> exercises = [
     "10 minutes of mindful breathing.",
-    "5 minutes of body scan meditation.",
-    "10 minutes of mindful walking."
+    "5 minutes of body stretching.",
+    "10 minutes of mindful walking.",
+    "10 minutes of imagery meditation.",
+    "5 minutes of muscle relaxation.",
+    "15 minutes of nature walk.",
+    "10 minutes of gratitude journaling."
   ];
 
   final List<String> examples = [
     "Try to stay present.",
     "Take deep breaths when stressed.",
-    "Focus on your senses."
+    "Focus on your senses.",
+    "Practice gratitude daily.",
+    "Listen to calming music.",
+    "Imagine a peaceful place.",
+    "Engage in drawing or painting."
   ];
 
   String getDailyContent(List<String> contentList) {
@@ -31,8 +42,7 @@ class HomeScreen extends StatelessWidget
   }
 
   @override
-  Widget build(BuildContext context)
-  {
+  Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
         child: Center(
@@ -41,7 +51,7 @@ class HomeScreen extends StatelessWidget
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
-                const SizedBox(height: 20), //Top padding
+                const SizedBox(height: 20), // Top padding
                 buildTitleSection('Be Bold'),
                 const SizedBox(height: 10.0),
                 buildSubtitleSection(getDailyContent(dailyAffirmations)),
@@ -63,7 +73,7 @@ class HomeScreen extends StatelessWidget
                 buildSection(
                   context,
                   'Mental Health Resources',
-                  'Message',
+                  'Other avenues',
                   MentalHealthResourcesScreen(),
                 ),
               ],
@@ -74,8 +84,7 @@ class HomeScreen extends StatelessWidget
     );
   }
 
-  Widget buildTitleSection(String title)
-  {
+  Widget buildTitleSection(String title) {
     return Container(
       padding: const EdgeInsets.all(10.0),
       decoration: BoxDecoration(
@@ -94,8 +103,7 @@ class HomeScreen extends StatelessWidget
     );
   }
 
-  Widget buildSubtitleSection(String subtitle)
-  {
+  Widget buildSubtitleSection(String subtitle) {
     return Container(
       padding: const EdgeInsets.all(10.0),
       decoration: BoxDecoration(
@@ -111,8 +119,7 @@ class HomeScreen extends StatelessWidget
     );
   }
 
-  Widget buildSection(BuildContext context, String title, String description, Widget screen)
-  {
+  Widget buildSection(BuildContext context, String title, String description, Widget screen) {
     return Container(
       padding: const EdgeInsets.all(10.0),
       decoration: BoxDecoration(
@@ -129,19 +136,18 @@ class HomeScreen extends StatelessWidget
           const SizedBox(height: 5.0),
           Text(
             description,
-            style: TextStyle(fontSize: 14), //Font size
+            style: TextStyle(fontSize: 14), // Font size
           ),
           const SizedBox(height: 10.0),
           ElevatedButton(
-            onPressed: ()
-            {
+            onPressed: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => screen),
               );
             },
             style: ElevatedButton.styleFrom(
-              minimumSize: Size(200, 40), //Button
+              minimumSize: Size(200, 40), // Button
               padding: EdgeInsets.symmetric(horizontal: 16.0),
             ),
             child: Text('Go to $title'),
